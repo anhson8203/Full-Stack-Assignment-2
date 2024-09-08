@@ -5,7 +5,7 @@ const postRouter = require('express').Router();
 
 postRouter.get('/find/:id', getPost);
 postRouter.get('/find/userposts/:id', getUserPosts);
-postRouter.get('timelinePosts', getTimeLinePosts);
+postRouter.get('/timelinePosts', verifyToken, getTimeLinePosts);
 
 postRouter.post('/', verifyToken, createPost);
 

@@ -25,3 +25,6 @@ replay_pid*
 /backend/node_modules
 backend/package.json
 backend/package-lock.json
+/backend/public/images
+client/public/logo192.png
+client/public/logo512.png
